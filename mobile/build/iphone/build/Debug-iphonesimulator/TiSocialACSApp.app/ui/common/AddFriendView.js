@@ -1,0 +1,1 @@
+/Users/chris/Documents/TiSocialACSApp/mobile/Resources/ui/common/AddFriendView.js

@@ -1,0 +1,11 @@
+Titanium Appcelerator App based on the Tab Group commonJS template. This is a skeleton social app using SDK 3.0 and Appcelerator Cloud Services on the Back End.
+
+---------
+
+Includes:
+I have only included moment.js for date manipulation and am using glyphics icons for Tabs and navButtons
+
+Install Instructions:
+1. Clone App
+2. Create new ACS App
+3. Replace oAuth credentials in tiapp.xml
