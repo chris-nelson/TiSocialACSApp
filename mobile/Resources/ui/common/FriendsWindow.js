@@ -115,20 +115,29 @@ function FriendsWindow(title) {
 		            	left:5,
 		            	right:5,
 		            	width:Ti.UI.SIZE,
-		            	height:Ti.UI.SIZE,
-		            	layout:'vertical'
+		            	height:Ti.UI.SIZE
 		            });
+		            
+		            var profilePic = Ti.UI.createImageView({
+						top:5,
+						left:5,
+						height:50,
+						width:50,
+						hires:true,
+						image:user.photo.urls.thumb_100
+					});
 		            
 		            var userLabel = Ti.UI.createLabel({
 		            	top:5,
-		            	left:5,
+		            	left:80,
 		            	height:Ti.UI.SIZE,
 		            	width:Ti.UI.SIZE,
 		            	font: {fontSize:20, fontFamily:appConfig.primaryFontFamily},
 		            	text:user.username
 		            });
 
-		            container.add(userLabel),
+		            container.add(profilePic);
+		          	container.add(userLabel);
 		          	row.add(container);
 		         	data.push(row); 
 		        }

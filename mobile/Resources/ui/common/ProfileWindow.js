@@ -1,4 +1,18 @@
 function ProfileWindow(title) {
+	
+	var EditProfileView = require('ui/common/EditProfileView');
+	var editProfileView = new EditProfileView();
+	
+	var editProfileContainerWindow = Ti.UI.createWindow({
+		title:'Edit Profile',
+		backgroundColor : appConfig.backgroundColor,
+		barColor:appConfig.primaryColor,
+		tabBarHidden : true,
+		navBarHidden:false,
+		backButtonTitle:'Back'
+	});
+	editProfileContainerWindow.add(editProfileView);
+	
 	var self = Ti.UI.createWindow({
 		title : 'Profile',
 		backgroundColor : '#acabac',
@@ -326,6 +340,10 @@ function ProfileWindow(title) {
 
 	self.addEventListener('open', function(e) {
 		loadProfile();
+	});
+	
+	settingsButton.addEventListener('click', function(e){
+		self.containingTab.open(editProfileContainerWindow);
 	})
 
 	return self;
