@@ -1,1 +1,0 @@
-/Users/chris/Documents/TiSocialACSApp/mobile/Resources/lib/moment.js

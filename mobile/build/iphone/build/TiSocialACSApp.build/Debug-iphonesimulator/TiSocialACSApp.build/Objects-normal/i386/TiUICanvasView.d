@@ -1,2 +1,0 @@
-dependencies: \
-  /Users/chris/Documents/TiSocialACSApp/mobile/build/iphone/Classes/TiUICanvasView.m
