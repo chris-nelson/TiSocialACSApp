@@ -1,6 +1,8 @@
 Titanium Appcelerator Mobile App based on the Tab Group commonJS template and AngularJS Web App using Bootstrap.
 ==============
 This is a skeleton for both mobile and web using Appcelerator Cloud Services on the Back End.
+
+*NOTE - WebApp has not been started yet
 --------------
 
 **Includes:**
